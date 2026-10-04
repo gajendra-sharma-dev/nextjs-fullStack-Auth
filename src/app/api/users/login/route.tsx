@@ -1,5 +1,5 @@
 import conntedDb from "@/dbConfig/db"
-// @ts-expect-error jsonwebtoken types are not installed
+
 import jwt from "jsonwebtoken"
 import User from "@/model/user.model"
 import bcrypt from "bcryptjs"

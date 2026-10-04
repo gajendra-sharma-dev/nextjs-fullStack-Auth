@@ -1,5 +1,5 @@
 import conntedDb from "@/dbConfig/db";
-import axios from "axios";
+
 import User from "@/model/user.model";
 import bcrypt from "bcryptjs";
 import { NextRequest, NextResponse } from "next/server";
