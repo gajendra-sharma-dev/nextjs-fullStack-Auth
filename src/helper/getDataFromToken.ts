@@ -1,7 +1,7 @@
 import type { NextRequest } from 'next/server'
 
 import jwt from "jsonwebtoken"
-import { request } from "http";
+
 
 export const getDataFromToken = (request:NextRequest) => {
     try {
