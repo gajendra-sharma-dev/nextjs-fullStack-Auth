@@ -23,7 +23,7 @@ export default function Sign () {
          setLoding(true)
         const response =  await axios.post("/api/users/signup",user)
         console.log(response.data);
-        toast.success("successfull login")
+        toast.success("successfull  sign")
         router.push("/login")
        } catch (error:any) {
         console.log(error,"sign in failed]");
