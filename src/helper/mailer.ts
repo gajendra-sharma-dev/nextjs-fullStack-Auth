@@ -31,7 +31,7 @@ export const sendEmail = async({email,emailType,userID}:any) => {
 
 
 const mailOption = {
-    from : "satishsharma9649881554@gmail.com",
+    from : process.env.NODEMAILER_USER,
     to : email,
     subject: emailType === "VERIFY" ? "Verify your email" : "Reset your password",
     html: `<p>Click <a href="${process.env.DOMAIN}/verifyemail?token=${hashToken}">here</a> to ${emailType === "VERIFY" ? "verify your email" : "reset your password"}</p>`

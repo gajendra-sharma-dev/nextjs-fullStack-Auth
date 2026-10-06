@@ -26,8 +26,8 @@ export default function Sign () {
         toast.success("successfull login")
         router.push("/login")
        } catch (error:any) {
-        console.log(error,"login failed]");
-        toast.error("login failed")
+        console.log(error,"sign in failed]");
+        toast.error("sign failed")
        }finally {
           setLoding(false)
        }
